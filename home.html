@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vibhu Chem Private Limited</title>
+    <meta name="description" content="Vibhu Chem Private Limited was established in the year 2006 to cater to the growing demands of lubricants in the Indian market.">
+    <meta name="keywords" content="Vibhu Chem, lubricants, Indian market, private limited">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <iframe id="wixIframe" src="https://dharkaromkar777.wixstudio.io/vibhu-chem" frameborder="0"></iframe>
+    <script>
+        document.getElementById('wixIframe').onload = function() {
+            const iframe = document.getElementById('wixIframe').contentWindow;
+            const hideWixAds = () => {
+                try {
+                    const ads = iframe.document.querySelector('.WIX_ADS');
+                    if (ads) {
+                        ads.style.display = 'none';
+                    }
+                } catch (e) {
+                    console.error('Error accessing iframe content:', e);
+                }
+            };
+            hideWixAds();
+            setInterval(hideWixAds, 1000); // Check periodically in case it gets re-added dynamically
+        };
+    </script>
+</body>
+</html>
